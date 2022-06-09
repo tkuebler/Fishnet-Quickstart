@@ -23,7 +23,7 @@ These instructions assume you are starting with a blank/default new project and 
 1. Create an empty game object at the root of your scene called NetworkManager and Add following scripts:
  	1. NetworkManager
 	1. Player Spawner 
-1. Set the 'Spawnable Prefabs' to 'DefaultPrefabObjects' ![Alt text](images/prefab-so)
+1. Set the 'Spawnable Prefabs' to 'DefaultPrefabObjects' ![Alt text](blob/main/images/prefab-so)
 1. Create a Fishnet Prefab Objects 
 
 
