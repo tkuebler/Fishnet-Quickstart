@@ -122,6 +122,10 @@ adding the PlayerInput object to the player prefab you created earlier.
 	- During Step 2 of that process add an addition jump action as shown. ![Jump Action](/images/jump-action.png). *Hint: for the binding use the 'listen' button and press space, then select what is shown.*
 - Wire up the unity events from the input system to the script you created as shown ![Wire up input to the driver](/images/wire-input.png)
 
+### Test
+Fire up multiple instances using ParalSync or a build + editor.  Have one of them be the server and a client, the others just be clients.  Everything should work as expected for player movement.
+
+Have a cold beer.
 
 ## Syncing Data
 
