@@ -120,8 +120,7 @@ public class PlayerInputDriver : NetworkBehaviour
 - [Follow the Quickstart](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/QuickStartGuide.html)
 adding the PlayerInput object to the player prefab you created earlier.  
 	- During Step 2 of that process add an addition jump action as shown. ![Jump Action](/images/jump-action.png). *Hint: for the binding use the 'listen' button and press space, then select what is shown.*
-- Wire up the unity events from the input system to the script you created as shown
-
+- Wire up the unity events from the input system to the script you created as shown ![Wire up input to the driver](/images/wire-input.png)
 
 
 ## Syncing Data
