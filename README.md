@@ -37,7 +37,7 @@ These instructions assume you are starting with a blank/default new project and 
 1. launch the game in your editor and make sure that once you click on server, then client the player spawns.
 1. You can test multiple versions of your game in multiple editors withou haveing to build using [Parelsync](https://github.com/VeriorPies/ParrelSync). I will not cover that here but it's the easiest way to dev multiplayer games that I know of.  You can also build the player and test that way.
 
-![Editor View in Play mode](/images/
+![Editor View in Play mode]("/images/basic-1.jpg")
 If everything seems to be working and your project looks right move on to the next section: Player Movement
 
 
