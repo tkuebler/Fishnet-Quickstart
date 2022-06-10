@@ -38,10 +38,21 @@ These instructions assume you are starting with a blank/default new project and 
 1. You can test multiple versions of your game in multiple editors withou haveing to build using [Parelsync](https://github.com/VeriorPies/ParrelSync). I will not cover that here but it's the easiest way to dev multiplayer games that I know of.  You can also build the player and test that way.
 
 ![Editor View in Play mode](/images/basic-1.png)
+
 If everything seems to be working and your project looks right move on to the next section: Player Movement
 
 
 ## Player movement
+I'm making some decisions here that make this phase a bit more complex, but it will be more useful in later sections to set up the player using Unity's new input system, it's Actions and the standard unity character controller.  Deal with it, this is the future and it's better.
+
+### Get the new input package and import it.
+[Install it](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/Installation.html)
+
+### Add the input bits to the player object and configure the input system.
+1. Create a new script on the player prefab called 'PlayerInputDriver' (or whatever you would like I suppose).
+1. [Follow the Quickstart](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.3/manual/QuickStartGuide.html)
+adding the PlayerInput object to the player prefab you created earlier.  During Step 2 of that process add an addition jump action as shown. ![Jump Action](/images/jump-action.png). *Hint: for the binding use the 'listen' button and press space, then select what is shown.*
+1. 
 
 ## Syncing Data
 
