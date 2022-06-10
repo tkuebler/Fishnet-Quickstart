@@ -1,6 +1,3 @@
-using System.Text;
-using Cinemachine;
-using FishNet.Connection;
 using FishNet.Object;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,15 +10,14 @@ public class PlayerInputDriver : NetworkBehaviour
     private Vector2 _moveInput;
     private Vector3 _moveDirection;
     private bool _jump;
-    [SerializeField] public float jumpSpeed = 20f;
-    [SerializeField] public float speed;
+    [SerializeField] public float jumpSpeed = 6f;
+    [SerializeField] public float speed = 8f;
     [SerializeField] public float gravity = 9.8f;
     private void Start()
     {
         _characterController = GetComponent(typeof(CharacterController)) as CharacterController;
         _jump = false;
     }
-
     private void Update()
     {
         if (!base.IsOwner)
@@ -40,9 +36,7 @@ public class PlayerInputDriver : NetworkBehaviour
         _moveDirection.y -= gravity * Time.deltaTime;
         _characterController.Move(_moveDirection * Time.deltaTime);
     }
-
     #region UnityEventCallbacks
-
     public void OnMovement(InputAction.CallbackContext context)
     {
         if (!IsOwner)
@@ -62,6 +56,5 @@ public class PlayerInputDriver : NetworkBehaviour
             _jump = false;
         }
     }
-
     #endregion
 }
