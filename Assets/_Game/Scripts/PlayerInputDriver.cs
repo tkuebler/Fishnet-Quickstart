@@ -39,7 +39,7 @@ public class PlayerInputDriver : NetworkBehaviour
     #region UnityEventCallbacks
     public void OnMovement(InputAction.CallbackContext context)
     {
-        if (!IsOwner)
+        if (!base.IsOwner)
             return;
         _moveInput = context.ReadValue<Vector2>();
     }
