@@ -110,10 +110,10 @@ GameObject:
   - component: {fileID: 637847847491416677}
   - component: {fileID: 1944360893098014582}
   - component: {fileID: 5555706872858179157}
-  - component: {fileID: 2203402279866985518}
   - component: {fileID: 8777256726728604379}
+  - component: {fileID: -6085504213795217608}
   m_Layer: 0
-  m_Name: Player
+  m_Name: BasicPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637847847491416679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -148,10 +148,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _networkBehaviours:
-  - {fileID: 2203402279866985518}
   - {fileID: 1944360893098014582}
   SceneTransformProperties:
-    Position: {x: 0, y: 0, z: 0}
+    Position: {x: 0, y: 1, z: 0}
     Rotation: {x: 0, y: 0, z: 0, w: 1}
     LocalScale: {x: 1, y: 1, z: 1}
   _isNetworked: 1
@@ -174,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 1
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 637847847491416677}
   _networkObjectCache: {fileID: 637847847491416677}
   _synchronizeParent: 0
@@ -222,24 +221,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2203402279866985518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637847847491416679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d0abbf9c987647f9bbe37e5ba180edd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 637847847491416677}
-  _networkObjectCache: {fileID: 637847847491416677}
-  jumpSpeed: 6
-  speed: 5
-  gravity: 9.8
 --- !u!114 &8777256726728604379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: dac1674faeacd4b84a6593a9a8becf2f, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 52f3e5252a35f44dc97eb2c287f30cbd, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -267,8 +248,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2203402279866985518}
-        m_TargetAssemblyTypeName: PlayerInputDriver, Assembly-CSharp
+      - m_Target: {fileID: -6085504213795217608}
+        m_TargetAssemblyTypeName: FishNetQuckstart.Basic.PlayerInputDriver, Assembly-CSharp
         m_MethodName: OnMovement
         m_Mode: 0
         m_Arguments:
@@ -291,8 +272,8 @@ MonoBehaviour:
     m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2203402279866985518}
-        m_TargetAssemblyTypeName: PlayerInputDriver, Assembly-CSharp
+      - m_Target: {fileID: -6085504213795217608}
+        m_TargetAssemblyTypeName: FishNetQuckstart.Basic.PlayerInputDriver, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
         m_Arguments:
@@ -350,3 +331,21 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &-6085504213795217608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637847847491416679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6d509032aff42568dd01d1d5d94ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 255
+  _addedNetworkObject: {fileID: 637847847491416677}
+  _networkObjectCache: {fileID: 0}
+  jumpSpeed: 6
+  speed: 8
+  gravity: -9.8

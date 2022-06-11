@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211a9f6ec51ddc14f908f5acc0cd0423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPrefab: {fileID: 637847847491416677, guid: 017e2c02737d74c0dba8e443e277d157, type: 3}
+  _playerPrefab: {fileID: 637847847491416677, guid: 2c8a3a1ef80c84f59a2b7b1750851cd5, type: 3}
   _addToDefaultScene: 1
   Spawns: []
 --- !u!224 &685403098 stripped

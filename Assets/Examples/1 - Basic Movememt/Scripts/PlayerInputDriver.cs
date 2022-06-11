@@ -14,7 +14,7 @@ namespace FishNetQuckstart.Basic {
         private bool _jump;
         [SerializeField] public float jumpSpeed = 6f;
         [SerializeField] public float speed = 8f;
-        [SerializeField] public float gravity = 9.8f;
+        [SerializeField] public float gravity = -9.8f;
         private void Start()
         {
             _characterController = GetComponent(typeof(CharacterController)) as CharacterController;
@@ -36,7 +36,7 @@ namespace FishNetQuckstart.Basic {
                 }
             }
 
-            _moveDirection.y -= gravity * Time.deltaTime;
+            _moveDirection.y += gravity * Time.deltaTime; // gravity is negative acceleration
             _characterController.Move(_moveDirection * Time.deltaTime);
         }
 
