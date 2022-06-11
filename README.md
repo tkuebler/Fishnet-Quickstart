@@ -2,7 +2,7 @@
 
 This is a companion project to the [written guide on GitBook](https://worldsalad.gitbook.io/fishnet-quickstart/).
 
-###[https://worldsalad.gitbook.io/fishnet-quickstart/](https://worldsalad.gitbook.io/fishnet-quickstart/)
+### [https://worldsalad.gitbook.io/fishnet-quickstart/](https://worldsalad.gitbook.io/fishnet-quickstart/)
 
 It covers:
 
